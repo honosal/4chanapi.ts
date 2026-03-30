@@ -1,4 +1,4 @@
-# 4capi
+# 4chanapi.ts
 
 A typed TypeScript client for the [4chan API](https://github.com/4chan/4chan-API), designed for React Native.
 
@@ -13,7 +13,7 @@ A typed TypeScript client for the [4chan API](https://github.com/4chan/4chan-API
 ## Installation
 
 ```sh
-npm install 4capi
+npm install 4chanapi.ts
 ```
 
 ---
@@ -21,7 +21,7 @@ npm install 4capi
 ## Quick Start
 
 ```ts
-import { FourChanClient } from "4capi";
+import { FourChanClient } from "4chanapi.ts";
 
 const client = new FourChanClient();
 
@@ -320,7 +320,7 @@ const archivedIds = await client.getArchive("g");
 Full-size image URL.
 
 ```ts
-import { getImageUrl } from "4capi";
+import { getImageUrl } from "4chanapi.ts";
 
 const url = getImageUrl("g", post.tim!, post.ext!);
 // "https://i.4cdn.org/g/1743249600789.png"
@@ -331,7 +331,7 @@ const url = getImageUrl("g", post.tim!, post.ext!);
 Thumbnail URL (always JPEG).
 
 ```ts
-import { getThumbnailUrl } from "4capi";
+import { getThumbnailUrl } from "4chanapi.ts";
 
 const thumb = getThumbnailUrl("g", post.tim!);
 // "https://i.4cdn.org/g/1743249600789s.jpg"
@@ -342,7 +342,7 @@ const thumb = getThumbnailUrl("g", post.tim!);
 Country flag GIF (boards with `country_flags` enabled).
 
 ```ts
-import { getCountryFlagUrl } from "4capi";
+import { getCountryFlagUrl } from "4chanapi.ts";
 
 const flag = getCountryFlagUrl(post.country!);
 // "https://s.4cdn.org/image/country/us.gif"
@@ -353,7 +353,7 @@ const flag = getCountryFlagUrl(post.country!);
 Board-specific flag GIF (boards with `board_flags` enabled).
 
 ```ts
-import { getBoardFlagUrl } from "4capi";
+import { getBoardFlagUrl } from "4chanapi.ts";
 
 const flag = getBoardFlagUrl("pol", post.board_flag!);
 // "https://s.4cdn.org/image/flags/pol/EU.gif"
@@ -364,7 +364,7 @@ const flag = getBoardFlagUrl("pol", post.board_flag!);
 Spoiler placeholder image. Pass a `customIndex` (1–10) for boards with custom spoilers.
 
 ```ts
-import { getSpoilerUrl } from "4capi";
+import { getSpoilerUrl } from "4chanapi.ts";
 
 getSpoilerUrl("b");          // default spoiler
 getSpoilerUrl("co", 3);      // custom spoiler #3 for /co/
@@ -375,7 +375,7 @@ getSpoilerUrl("co", 3);      // custom spoiler #3 for /co/
 Static icon URLs as constants.
 
 ```ts
-import { icons } from "4capi";
+import { icons } from "4chanapi.ts";
 
 icons.sticky       // https://s.4cdn.org/image/sticky.gif
 icons.closed       // https://s.4cdn.org/image/closed.gif
@@ -395,7 +395,7 @@ icons.fileDeletedReply  // https://s.4cdn.org/image/filedeleted-res.gif
 All methods throw `FourChanApiError` on non-200/304 responses (e.g. 404 for a thread that no longer exists).
 
 ```ts
-import { FourChanClient, FourChanApiError } from "4capi";
+import { FourChanClient, FourChanApiError } from "4chanapi.ts";
 
 const client = new FourChanClient();
 
