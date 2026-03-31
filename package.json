@@ -1,6 +1,6 @@
 {
   "name": "4chanapi.ts",
-  "author": "Honosal <honosal875@proton.me> (https://github.com/honosal)"
+  "author": "Honosal <honosal875@proton.me> (https://github.com/honosal)",
   "version": "0.1.0",
   "description": "Typed TypeScript client for the 4chan API",
   "main": "dist/index.js",
@@ -19,10 +19,14 @@
     "react-native"
   ],
   "license": "MIT",
-  "bugs": {
-  "url": "https://github.com/honosal/4chanapi.ts/issues"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/honosal/4chanapi.ts.git"
   },
-  "homepage": "https://github.com/honosal/4chanapi.ts"
+  "bugs": {
+    "url": "https://github.com/honosal/4chanapi.ts/issues"
+  },
+  "homepage": "https://github.com/honosal/4chanapi.ts",
   "devDependencies": {
     "typescript": "^5.4.5"
   }
