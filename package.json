@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "build": "tsc",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "keywords": [
     "4chan",
