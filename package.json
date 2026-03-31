@@ -1,0 +1,24 @@
+{
+  "name": "4capi",
+  "version": "0.1.0",
+  "description": "Typed TypeScript client for the 4chan API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "4chan",
+    "api",
+    "typescript",
+    "react-native"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
